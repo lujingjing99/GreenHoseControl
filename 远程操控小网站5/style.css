@@ -1,0 +1,734 @@
+/* ------------------------------------------背景开始--------------------------------------------------- */
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background-position: fixed;
+    background-size: contain;
+    /* background-attachment: fixed; */
+    /* animation: sky_background 5s ease-out infinite; */
+    /* background: -webkit-linear-gradient(rgba(231, 15, 15), orange, rgb(207, 188, 188)) no-repeat;
+    background: -webkit-linear-gradient(rgba(231, 15, 15), orange, rgb(207, 188, 188)) no-repeat;
+    background: -o-linear-gradient(rgba(231, 15, 15), orange, rgb(207, 188, 188)) no-repeat;
+    background: -moz-linear-gradient(rgba(231, 15, 15), orange, rgb(230, 162, 162)) no-repeat;
+    background: linear-gradient(rgba(231, 15, 15), orange, rgb(207, 188, 188)) no-repeat; */
+    background: -webkit-linear-gradient(rgb(78, 145, 233), white) no-repeat;
+    background: -o-linear-gradient(rgb(78, 145, 233), white) no-repeat;
+    background: -moz-linear-gradient(rgb(78, 145, 233), white) no-repeat;
+    background: linear-gradient(rgb(78, 145, 233), white) no-repeat;
+}
+
+
+/* 可用CSS改变天空颜色的方法 ，但改为用js更方便*/
+
+
+/* @keyframes sky_background {
+        0% {
+            background: -webkit-linear-gradient(rgba(231, 15, 15, 0.473), orange, rgb(207, 188, 188)) no-repeat;
+            color: #a3d9ff
+        }
+        50% {
+            background: -webkit-linear-gradient(blue, white) no-repeat;
+            color: #a3d9ff;
+        }
+    } */
+
+#cloud {
+    position: fixed;
+    overflow: hidden;
+    top: -30px;
+    width: 100%;
+    height: 450px;
+    display: inline-block;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#cloud_one {
+    z-index: -3;
+    position: absolute;
+    background: url("images/cloud_one.png") repeat-x;
+    left: 0px;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_one 30s linear infinite;
+    -moz-animation: cloud_one 30s linear infinite;
+    -o-animation: cloud_one 30s linear infinite;
+    animation: cloud_one 30s linear infinite;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+#cloud_two {
+    z-index: -2;
+    background: url("images/cloud_two.png") repeat-x;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_two 50s linear infinite;
+    -moz-animation: cloud_two 50s linear infinite;
+    -o-animation: cloud_two 50s linear infinite;
+    animation: cloud_two 50s linear infinite;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+#cloud_three {
+    z-index: -1;
+    background: url("images/cloud_three.png") repeat-x;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 300%;
+    -webkit-animation: cloud_three 70s linear infinite;
+    -moz-animation: cloud_three 70s linear infinite;
+    -o-animation: cloud_three 70s linear infinite;
+    animation: cloud_three 70s linear infinite;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes cloud_one {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+@keyframes cloud_one {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+@keyframes cloud_two {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+@-webkit-keyframes cloud_two {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+@keyframes cloud_three {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+@-webkit-keyframes cloud_three {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+#sun {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: yellow;
+    border-radius: 100px;
+}
+
+
+/* ------------------------------------------背景结束--------------------------------------------------- */
+
+#main {
+    width: 1070px;
+    height: 87.5%;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(209, 221, 153, 0.7);
+    top: 80px;
+    border-radius: 50px 50px 0 0;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ------------------------------------------轮播图--------------------------------------------------- */
+
+#main_top {
+    overflow: hidden;
+}
+
+.lunbo {
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+}
+
+.carousel-control {
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+}
+
+
+/* ------------------------------------------轮播图--------------------------------------------------- */
+
+
+/* ------------------------------------------导航栏--------------------------------------------------- */
+
+#top_button {
+    font-weight: bold;
+    /* width: 600px; */
+    width: 100%;
+    position: relative;
+}
+
+
+/* #sousuo {
+    right: 10px;
+    float: right;
+} */
+
+#sid {
+    border-radius: 5px;
+    /* background: white; */
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+
+marquee {
+    margin: 0px;
+    padding: 0px;
+    /* scrolldelay: 10;
+    scrollamount: 3px; */
+}
+
+hr {
+    margin: 1px;
+}
+
+
+/* ------------------------------------------导航栏--------------------------------------------------- */
+
+
+/* ------------------------------------------左导航--------------------------------------------------- */
+
+#left_button {
+    width: 50px;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    /* border: 1px solid black; */
+    /* background: rgba(196, 225, 238, 0.5); */
+}
+
+.left_but {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    float: none;
+    display: block;
+    background: rgb(199, 247, 247, 0.5);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    text-align: center;
+    cursor: pointer;
+}
+
+.lefta {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform-origin: right;
+    cursor: pointer;
+}
+
+#left_button :hover {
+    background: rgba(128, 187, 187, 0.9);
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    /* transform: scale(1.5); */
+    transition: font-size 0.3s;
+}
+
+a {
+    /* 锚点链接去除下划 */
+    text-decoration: none!important;
+}
+
+
+/* ------------------------------------------左导肮--------------------------------------------------- */
+
+
+/* ------------------------------------------右控件--------------------------------------------------- */
+
+#right_control {
+    position: absolute;
+    top: 210px;
+    left: 200px;
+    /* margin-right: auto;
+    margin-top: auto; */
+    width: 800px;
+    height: 350px;
+    border: 15px solid transparent;
+    border-image: url("images/background1.png") 20 round;
+    -webkit-border-image: url("images/background1.png") 20 rounded;
+    -o-border-image: url("images/background1.png") 20 round;
+    -moz-border-image: url("images/background1.png") 20 round;
+    /* border-image-repeat: repeated;
+    -webkit-border-image-repeat: repeated; */
+    overflow: hidden;
+}
+
+.picture {
+    display: block;
+}
+
+.picture:first-child {
+    width: 770px;
+    height: 350px;
+    /* background-color: aqua; */
+}
+
+.picture:nth-child(2) {
+    width: 770px;
+    height: 350px;
+    /* background-color: rgb(174, 185, 236); */
+}
+
+.picture:nth-child(3) {
+    width: 770px;
+    height: 350px;
+    /* background-color: rgb(204, 233, 167); */
+}
+
+.picture:nth-child(4) {
+    width: 770px;
+    height: 350px;
+    /* background-color: rgb(233, 193, 148); */
+}
+
+.picture:last-child {
+    width: 770px;
+    height: 350px;
+    /* background-color: rgb(185, 162, 136); */
+}
+
+.maodian {
+    visibility: hidden;
+}
+
+.led {
+    width: 750px;
+    height: 320px;
+}
+
+img {
+    width: 100px;
+}
+
+.btnimg {
+    width: 100px;
+    height: 50px;
+}
+
+.led_g1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 350px;
+    height: 150px;
+}
+
+.led1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 150px;
+}
+
+.btn1 {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 100px;
+    height: 150px;
+}
+
+.led_g2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 350px;
+    height: 150px;
+}
+
+.led2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 150px;
+}
+
+.btn2 {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 100px;
+    height: 150px;
+}
+
+.led_g3 {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 350px;
+    height: 150px;
+}
+
+.led3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 150px;
+}
+
+.btn3 {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 100px;
+    height: 150px;
+}
+
+.led_g4 {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    width: 350px;
+    height: 150px;
+}
+
+.led4 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 150px;
+}
+
+.btn4 {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 100px;
+    height: 150px;
+}
+
+
+/* ------------------------------------------右控件--------------------------------------------------- */
+
+
+/* ------------------------------------------注册表--------------------------------------------------- */
+
+.tableid {
+    z-index: 4;
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -276px;
+    margin-top: -100px;
+    /* border: 1px solid black; */
+    padding: auto;
+    width: 570px;
+    height: 220px;
+    background-color: rgb(130, 205, 228);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(197, 232, 243);
+    display: none;
+    animation: zoom 1s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@-moz-keyframes zoom {
+    from {
+        -moz-transform: scale(0)
+    }
+    to {
+        -moz-transform: scale(1)
+    }
+}
+
+@-o-keyframes zoom {
+    from {
+        -o-transform: scale(0)
+    }
+    to {
+        -o-transform: scale(1)
+    }
+}
+
+.unit {
+    margin: auto;
+    position: absolute;
+    width: 550px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+}
+
+#headid {
+    position: relative;
+    margin: auto;
+    /* margin-top: auto; */
+    background: lightblue;
+    height: 30px;
+    /* width: 550px; */
+}
+
+#zhuce {
+    position: relative;
+    z-index: 1;
+}
+
+#tabledl {
+    /* border: 1px solid blueviolet; */
+    padding: 10px;
+    width: 550px;
+    background: lightcyan;
+    height: 170px;
+}
+
+.span2 {
+    float: right;
+    position: relative;
+    margin-right: 5px;
+    /* vertical-align: middle; */
+    color: grey;
+    padding: 4px;
+    transition: 0.4s;
+}
+
+.span1 {
+    /* padding: 2px; */
+    position: relative;
+    font-size: 18px;
+    transition: 0.4s;
+    color: grey;
+}
+
+.span1:hover,
+.span1:focus,
+.span2:focus,
+.span2:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* #register:onclick tableid {
+    display: block;
+} */
+
+.subid {
+    position: relative;
+    margin-left: 100px;
+}
+
+.c3 {
+    color: red;
+    visibility: hidden;
+    /* display: none; */
+    /* 消失不占位 */
+}
+
+
+/* ------------------------------------------注册表--------------------------------------------------- */
+
+
+/* ------------------------------------------登陆表--------------------------------------------------- */
+
+#denglu {
+    padding: 10px;
+    width: 550px;
+    background: lightcyan;
+    height: 170px;
+    z-index: 0;
+}
+
+.tr {
+    margin: 10px;
+}
+
+#tablezc {
+    height: 130px;
+}
+
+
+/* ------------------------------------------登陆表--------------------------------------------------- */
+
+
+/* ------------------------------------------图表--------------------------------------------------- */
+
+
+/* 气体 */
+
+#main1 {
+    position: absolute;
+    width: 780px;
+    height: 320px;
+    top: 350px;
+}
+
+
+/* 气体折线图 */
+
+#coLine {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    width: 500px;
+    height: 300px;
+}
+
+
+/* 气体仪表盘 */
+
+#coPie {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 280px;
+    height: 300px;
+}
+
+
+/* 温度 */
+
+#main2 {
+    position: absolute;
+    top: 700px;
+    width: 780px;
+    height: 320px;
+}
+
+
+/* 温度仪表盘总 */
+
+#tem {
+    position: absolute;
+    top: 0px;
+    width: 380px;
+    height: 320px;
+}
+
+
+/* 温度1 */
+
+#tem1 {
+    position: absolute;
+    top: 0px;
+    width: 190px;
+    height: 160px;
+}
+
+
+/* 温度2 */
+
+#tem2 {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    width: 190px;
+    height: 160px;
+}
+
+
+/* 温度3 */
+
+#tem3 {
+    position: absolute;
+    top: 160px;
+    width: 190px;
+    height: 160px;
+}
+
+
+/* 温度4 */
+
+#tem4 {
+    position: absolute;
+    left: 160px;
+    top: 160px;
+    width: 190px;
+    height: 160px;
+}
+
+
+/* 折线温度 */
+
+#temLine {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 400px;
+    height: 320px;
+}
+
+
+/* ------------------------------------------图表--------------------------------------------------- */
